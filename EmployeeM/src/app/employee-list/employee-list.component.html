@@ -1,0 +1,28 @@
+<a class="nav-link" routerLink="/Add-Employee" style="font-size: 18px;"><i style="color: rgb(98, 235, 13);font-size: 25px;" class='bx bxs-user-plus'></i><button>Add-Employee</button>  </a>
+<h2 style="text-align: center; color: brown; margin-bottom: 50px; margin-top: 25px;">Employee-list Chart...</h2>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Emp. Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+          <hr  style="color: black;">
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employee">
+                <th scope="row">{{emp.id}}</th>
+                <td>{{emp.firstname}}</td>
+                <td>{{emp.lasttname}}</td>
+                <td>{{emp.email}}</td>
+                <td><button class="btn btn-success" (click)="updateEmployeeRecord(emp.id)">Update</button></td>
+                <td><button class="btn btn-danger" (click)="deleteEmployeeRecord(emp.id)">Delete</button></td>
+
+            </tr>
+        </tbody>
+      </table>
+</div>

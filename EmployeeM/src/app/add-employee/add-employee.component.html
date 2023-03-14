@@ -1,0 +1,29 @@
+<h3 style="color: rgb(34, 8, 59);text-align: center;margin-top: 25px; margin-bottom: 25px; ">Add-Employee Details</h3>
+<button class="btn btn-primary">Log Out</button>
+<hr >
+<div class="container col-5">
+<form>
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter firstname"
+      name="firstname" [(ngModel)]="employee.firstname">
+     
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" [(ngModel)]="employee.lasttname">
+    </div>
+   
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email
+        " [(ngModel)]="employee.email">
+        
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" [(ngModel)]="employee.password">
+      </div>
+    <button type="submit" (click)="addEmployee()" class="btn btn-primary">Submit</button>
+  </form>
+</div>

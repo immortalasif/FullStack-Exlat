@@ -1,0 +1,24 @@
+<h3 style="color: rgb(12, 159, 46);text-align: center;margin-top: 25px; margin-bottom: 25px; "><u> Update Employee Details</u></h3>
+<hr >
+<div class="container col-5">
+<form>
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter firstname"
+      name="firstname" [(ngModel)]="employee.firstname">
+     
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" [(ngModel)]="employee.lasttname">
+    </div>
+   
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email
+        " [(ngModel)]="employee.email">
+        
+      </div>
+    <button type="submit" (click)="updateEmployee(employee.id)" class="btn btn-success">Update</button>
+  </form>
+</div>

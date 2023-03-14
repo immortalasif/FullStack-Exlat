@@ -1,0 +1,21 @@
+.img img{
+	width: 500px;
+    height: 500px;
+	justify-content: space-between;
+	
+}
+.img{
+	display: flex;
+	justify-content:flex-start;
+	align-items: right;
+}
+.avatar{
+	height: 5px;
+}
+/* .container{
+	background-color: rgb(82, 224, 30);
+	background: springgreen;
+	justify-content: center;
+	
+
+} */
